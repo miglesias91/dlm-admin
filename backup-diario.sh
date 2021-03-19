@@ -13,4 +13,4 @@ ayer=$(date -d "yesterday" +"%Y-%m-%d")
 
 ayer_sin_guion=$(date -d "yesterday" +"%Y%m%d")
 
-mongoexport --host=${ip} --port=27017 --authenticationDatabase ${authdb} -u ${usuario} -p ${password} --db=${db_frecuencias} --collection=${frecuencias} --query='{"fecha":{"$gte":"'${ayer_sin_guion}'", "$lte":"'${ayer_sin_guion}'"}}' --out ${2}frecuencias/${ayer}.json
+mongoexport --host=${ip} --port=27017 --authenticationDatabase ${authdb} -u ${usuario} -p ${password} --db=${db_frecuencias} --collection=${coleccion_frecuencias} --query='{"fecha":{"$gte":"'${ayer_sin_guion}'", "$lte":"'${ayer_sin_guion}'"}}' --out ${2}frecuencias/${ayer}.json
