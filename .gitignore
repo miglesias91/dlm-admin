@@ -113,3 +113,4 @@ freqs/
 *.jpg
 .vscode/
 token.json
+config.json
