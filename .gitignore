@@ -107,10 +107,13 @@ venv.bak/
 log.txt
 twitter.keys
 conexiones.json
+conexiones-oracle.json
 modelos/
 freqs/
 *.png
 *.jpg
 .vscode/
 token.json
+token.pickle
+visualizadordecontexto-credentials.json
 config.json
