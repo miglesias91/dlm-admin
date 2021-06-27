@@ -1,7 +1,7 @@
 cachetools==4.2.1
 certifi==2020.12.5
 chardet==4.0.0
-dlm-lector==1.0.0
+#dlm-lector==1.0.0
 feedparser==6.0.8
 google-api-core==1.26.2
 google-api-python-client==2.3.0
