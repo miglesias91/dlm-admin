@@ -15,7 +15,7 @@ def reportar(parametros=None):
     hoy = datetime.datetime.now(tz)
 
     diarios = Diario.leer_etiquetas('medios.yaml')
-    diarios = [d for d in diarios if d not in ['casarosada', 'popular']]
+    diarios = [d for d in diarios if d not in ['casarosada', 'popular', 'telam']]
 
     reporte = {}
     if parametros['solo_faltantes']:
