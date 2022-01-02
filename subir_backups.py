@@ -22,9 +22,9 @@ def main():
 
     # subo noticias de ayer
     name = string_ayer + '.json'
-    path = '/home/ubuntu/backups_dlm/diarios/noticias/' + string_ayer + '.json'
+    path = '/home/ubuntu/backups_dlm/diarios/noticias/' + string_ayer + '.csv'
     metadata = {'name': name, 'parents' : [ id_carpeta_noticias ]}
-    media = MediaFileUpload(path, mimetype='text/json')
+    media = MediaFileUpload(path, mimetype='text/csv')
     file = service.files().create(body=metadata, media_body=media, fields='id').execute()
 
     # subo frecuencias de ayer
