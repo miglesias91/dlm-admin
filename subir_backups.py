@@ -21,7 +21,7 @@ def main():
     id_carpeta_frecuencias = config['ids_carpetas']['frecuencias']
 
     # subo noticias de ayer
-    name = string_ayer + '.json'
+    name = string_ayer + '.csv'
     path = '/home/ubuntu/backups_dlm/diarios/noticias/' + string_ayer + '.csv'
     metadata = {'name': name, 'parents' : [ id_carpeta_noticias ]}
     media = MediaFileUpload(path, mimetype='text/csv')
